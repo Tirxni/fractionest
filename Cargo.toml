@@ -1,0 +1,4 @@
+[workspace]
+members = ["backend/practionnest_backend", "backend/practionnest_dip721","backend/practionnest_payments"]
+
+resolver = "2"

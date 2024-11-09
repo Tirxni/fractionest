@@ -1,0 +1,23 @@
+{
+  "canisters": {
+    "practionnest_dip721": {
+      "candid": "backend/practionnest_dip721/practionnest_dip721.did",
+      "package": "practionnest_dip721",
+      "type": "rust"
+    },
+    "practionnest_backend": {
+      "dependencies": ["practionnest_dip721"],
+      "candid": "backend/practionnest_backend/practionnest_backend.did",
+      "package": "practionnest_backend",
+      "type": "rust"
+    },
+    "frontend": {
+      "dependencies": ["practionnest_backend", "practionnest_dip721"],
+      "frontend": {
+        "entrypoint": "dist/index.html"
+      },
+      "source": ["dist"],
+      "type": "assets"
+    }
+  }
+}
