@@ -1,10 +1,10 @@
-# Practionnest
+# Fractionest
 
-Practionnest is a decentralized application (DApp) built on the Internet Computer Protocol (ICP) that facilitates the selling and co-ownership of housing units as NFTs (Non-Fungible Tokens). Users can purchase units of a property, co-own it, and earn profits based on its performance.
+Fractionest is a decentralized application (DApp) built on the Internet Computer Protocol (ICP) that facilitates the selling and co-ownership of housing units as NFTs (Non-Fungible Tokens). Users can purchase units of a property, co-own it, and earn profits based on its performance.
 
 ## Overview
 
-Practionnest leverages a custom implementation of the DIP-721 NFT standard and a Decentralized Autonomous Organization (DAO) on the ICP blockchain to achieve the following:
+Fractionest leverages a custom implementation of the DIP-721 NFT standard and a Decentralized Autonomous Organization (DAO) on the ICP blockchain to achieve the following:
 
 - **Unitization of Real Estate**: Properties are divided into units represented as NFTs.
 - **Property Co-Ownership**: Users can buy and own units, collectively owning the entire property.
@@ -30,13 +30,13 @@ Practionnest leverages a custom implementation of the DIP-721 NFT standard and a
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/abundance-io/practionnest.git
+   git clone https://github.com/abundance-io/Fractionest.git
    ```
 
 2. **Navigate to the project directory:**
 
    ```bash
-   cd practionnest
+   cd Fractionest
    ```
 
 3. **Install dependencies:**
@@ -58,7 +58,7 @@ Practionnest leverages a custom implementation of the DIP-721 NFT standard and a
 
 ## Searching for Housing Units
 
-To search for available housing units on Practionnest, utilize the following methods with `dfx` queries:
+To search for available housing units on Fractionest, utilize the following methods with `dfx` queries:
 
 ### Query: `search_units`
 
@@ -70,7 +70,7 @@ To search for available housing units on Practionnest, utilize the following met
 
 ```bash
 # Sample dfx query for searching housing units
-dfx canister call practionnest search_units '(record { location = "City A"; priceRange = "$100,000 - $200,000"; size = "2 bedrooms"; })'
+dfx canister call Fractionest search_units '(record { location = "City A"; priceRange = "$100,000 - $200,000"; size = "2 bedrooms"; })'
 ```
 
 ## Purchasing Units
@@ -87,14 +87,14 @@ Once you've found the desired housing unit(s) through searching, proceed to purc
 
 ```bash
 # Sample dfx command for purchasing housing units
-dfx canister call practionnest purchase_unit '(unit123, record { paymentMethod = "Credit Card"; amount = "$150,000"; })'
+dfx canister call Fractionest purchase_unit '(unit123, record { paymentMethod = "Credit Card"; amount = "$150,000"; })'
 ```
 
 ### Using the Website
 
-The Practionnest website provides a user-friendly interface for interacting with the application. To use the website:
+The Fractionest website provides a user-friendly interface for interacting with the application. To use the website:
 
-- Access the Practionnest website: ]
+- Access the Fractionest website: ]
 - Login or Create an Account: log in using your icp identity or create an account.
 - Explore Available Units: Browse and search for available housing units .
 - Purchase Units: Once you find a unit of interest, proceed to purchase it.
